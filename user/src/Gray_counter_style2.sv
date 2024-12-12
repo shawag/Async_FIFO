@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+//generate ptr with extra code in async_fifo
 module Gray_counter_style_2 #(
     parameter    PTR_WIDTH = 8
 )
@@ -8,7 +9,7 @@ module Gray_counter_style_2 #(
     input                   inc     ,
     input                   full    ,
     input                   empty   ,
-    output [PTR_WIDTH-2:0]  addr     ,
+    output [PTR_WIDTH-2:0]  addr    ,
     output [PTR_WIDTH-1:0]  ptr     
 );
 
