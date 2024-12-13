@@ -10,7 +10,8 @@ module Gray_counter_style_2 #(
     input                   full    ,
     input                   empty   ,
     output [PTR_WIDTH-2:0]  addr    ,
-    output [PTR_WIDTH-1:0]  ptr     
+    output [PTR_WIDTH-1:0]  ptr     ,
+    output [PTR_WIDTH-1:0]  g_nxt     
 );
 
 logic [PTR_WIDTH-1:0] bin;

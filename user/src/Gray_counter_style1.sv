@@ -10,12 +10,13 @@ module Gray_counter_style_1 #(
     input                       full    ,
     input                       empty   ,
     output [PTR_WIDTH-1:0]      ptr     ,
-    output [PTR_WIDTH-2:0]      addr 
+    output [PTR_WIDTH-2:0]      addr    ,
+    output [PTR_WIDTH-1:0]      g_nxt 
 );
 
 logic [PTR_WIDTH-1:0] bin;
 logic [PTR_WIDTH-1:0] bin_nxt;
-logic [PTR_WIDTH-1:0] g_nxt;
+
 logic             msb_nxt;
 logic             addr_msb;
 //binary increment counter
